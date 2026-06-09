@@ -1,0 +1,81 @@
+:root {
+  --color-bg: #000000;
+  --color-surface: #0a0a0a;
+  --color-primary: #FDC300;
+  --color-text: #ffffff;
+  --color-text-dim: #888888;
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter', sans-serif; /* Ideally a more editorial font if available */
+  --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.25rem 3.5rem;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.9rem;
+  border-radius: 999px; /* Capsule shape */
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+section {
+  padding: 10rem 0;
+}
+
+.text-reveal {
+  overflow: hidden;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+  section {
+    padding: 6rem 0;
+  }
+}
