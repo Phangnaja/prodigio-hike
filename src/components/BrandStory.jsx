@@ -125,21 +125,21 @@ const BrandStory = () => {
           .brand-badge-small {
             position: absolute;
             bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            right: auto;
-            width: 90px;
-            height: 90px;
-            background: rgba(0,0,0,0.6);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 1rem;
-            border-radius: 50%;
+            right: 2rem;
+            left: auto;
+            transform: none;
+            width: 80px;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
             animation: float 4s ease-in-out infinite;
             z-index: 10;
+            background: none;
+            backdrop-filter: none;
+            border: none;
+            padding: 0;
+            box-shadow: none;
           }
         }
       `}} />
