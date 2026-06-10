@@ -123,10 +123,16 @@ const BrandStory = () => {
             margin: 0 auto;
           }
           .brand-badge-small {
-            bottom: -1rem;
-            right: 50%;
-            transform: translateX(50%);
-            animation: none;
+            position: relative;
+            bottom: auto;
+            right: auto;
+            transform: none;
+            margin: 2rem auto 0;
+            width: 80px;
+            background: rgba(255,255,255,0.05);
+            padding: 1rem;
+            border-radius: 50%;
+            animation: float 4s ease-in-out infinite;
           }
         }
       `}} />
